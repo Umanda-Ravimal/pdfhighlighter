@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function useLocalStorage(key, initialValue) {
+function useLocalStorage(key :any, initialValue:any) {
     // Get stored value from localStorage, or the initial value if not found
     const [storedValue, setStoredValue] = useState(() => {
       try {
@@ -14,7 +14,7 @@ function useLocalStorage(key, initialValue) {
     
     
     // Function to update stored value in both state and localStorage
-    const setValue = (value) => {
+    const setValue = (value :any) => {
       try {
         const valueToStore = value instanceof Function ? value(storedValue) : value;
         setStoredValue(valueToStore);

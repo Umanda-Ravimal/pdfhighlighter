@@ -1,11 +1,11 @@
-import {  Button, Image, Link, Stack, Typography } from "@kelsen-labs/atoms";
+import {  Button, Image, Link, Stack, Typography } from "@my-workspace/packages-atoms";
 import { useTranslation } from "react-i18next";
 import logo from "/assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import React, { useCallback, useEffect } from "react";
-import { AppRoutes, openDialog, useDialog } from "@kelsen-labs/common";
-import { useProjectData } from "@kelsen-labs/zustand";
-import { useProjectService } from "@kelsen-labs/api";
+import { AppRoutes, openDialog, useDialog } from "@my-workspace/packages-common";
+import { useProjectData } from "@my-workspace/packages-zustand";
+import { useProjectService } from "@my-workspace/packages-api";
 
 import {
   deleteProjectIdProperty,

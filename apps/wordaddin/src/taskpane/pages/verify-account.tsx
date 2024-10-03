@@ -1,5 +1,5 @@
-import { Button, Card, StyledBox, FormTextInput, Typography, Container, Stack, Link, Image } from "@kelsen-labs/atoms";
-import { confirmSignUp, resendAccountActivationCode } from "@kelsen-labs/api";
+import { Button, Card, StyledBox, FormTextInput, Typography, Container, Stack, Link, Image } from "@my-workspace/packages-atoms";
+import { confirmSignUp, resendAccountActivationCode } from "@my-workspace/packages-api";
 import { redirectToPage } from "../../utils";
 import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -24,7 +24,7 @@ const VerifyAccountPage = () => {
 
   const handleSubmit = useCallback(
     async (data: FormData) => {
-      await confirmSignUp(username, data.otp);
+      // await confirmSignUp(username, data.otp);
       redirectToPage("sign-in");
     },
     [username]
@@ -41,7 +41,7 @@ const VerifyAccountPage = () => {
   }, [countdown]);
 
   const handleResendClick = useCallback(async () => {
-    await resendAccountActivationCode(username);
+    // await resendAccountActivationCode(username);
     setCountdown(60);
   }, [username]);
 

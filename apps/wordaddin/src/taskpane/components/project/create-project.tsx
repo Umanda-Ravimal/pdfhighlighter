@@ -1,5 +1,5 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Button, FormTextInput, Stack, StyledBox, Typography } from "@kelsen-labs/atoms";
+import { Button, FormTextInput, Stack, StyledBox, Typography } from "@my-workspace/packages-atoms";
 import { FormProvider, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { useState } from "react";

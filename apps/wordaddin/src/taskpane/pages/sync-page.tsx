@@ -1,10 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Button, Typography, Stack, Paper, Badge } from "@kelsen-labs/atoms";
+import { Button, Typography, Stack, Paper, Badge } from "@my-workspace/packages-atoms";
 import { useTranslation } from "react-i18next";
 import { Sync } from "@mui/icons-material";
 import { Divider, ListItem, ListItemText } from "@mui/material";
-import { useSyncService } from "@kelsen-labs/api";
-import { useMetaDataStore } from "@kelsen-labs/zustand";
+import { useSyncService } from "@my-workspace/packages-api";
+import { useMetaDataStore } from "@my-workspace/packages-zustand";
 
 
 type ChangeItem = {
@@ -55,7 +55,7 @@ const SyncPage = () => {
         <Paper variant="sourceContainer" sx={{ maxHeight: "270px" }}>
           {changesData.map((item, index) => (
             <Stack key={index} direction={"column"} spacing={"10px"}>
-              <ListItem button onClick={() => handleClick(item)}>
+              {/* <ListItem button onClick={() => handleClick(item)}>
                 <ListItemText
                   primary={
                     <Stack direction="row" justifyContent="space-between" alignItems="center" width="100%" spacing={3}>
@@ -72,7 +72,7 @@ const SyncPage = () => {
                     </Stack>
                   }
                 />
-              </ListItem>
+              </ListItem> */}
             </Stack>
           ))}
         </Paper>

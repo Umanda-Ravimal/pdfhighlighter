@@ -1,4 +1,4 @@
-import { useAuthStore } from "@kelsen-labs/zustand";
+import { useAuthStore } from "@my-workspace/packages-zustand";
 
 
 const useAuth = () => {

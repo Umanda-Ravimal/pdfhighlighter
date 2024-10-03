@@ -1,6 +1,6 @@
 import React from "react";
 
-const UnprotectedPage = ({ children }) => {
+const UnprotectedPage = ({ children }:any) => {
   return <div>{children}</div>;
 };
 

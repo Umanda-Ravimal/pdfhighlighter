@@ -1,13 +1,13 @@
-import { Box, Paper, Stack, Image, IconButton } from "@kelsen-labs/atoms";
+import { Box, Paper, Stack, Image, IconButton } from "@my-workspace/packages-atoms";
 import React, { useEffect } from "react";
 import logo from "/assets/logo.png";
-import { useProjectService } from "@kelsen-labs/api";
-import { useProjectData } from "@kelsen-labs/zustand";
-import { AppRoutes } from "@kelsen-labs/common";
+import { useProjectService } from "@my-workspace/packages-api";
+import { useProjectData } from "@my-workspace/packages-zustand";
+import { AppRoutes } from "@my-workspace/packages-common";
 import { useNavigate } from "react-router-dom";
 import { loadFromBase64, setProjectIdProperty } from "../../../commands/commands";
 import useProjects from "../../../hook/use-projects";
-import { ProjectList } from "../../components";
+// import { ProjectList } from "../../components";
 import { ArrowBack } from "@mui/icons-material";
 
 const ExistProject = () => {
@@ -73,22 +73,22 @@ const ExistProject = () => {
   };
 
   // This method for delete Project
-  const handleProjectDelete =
-    (projectId: string) =>
-    async ({ message }, dialog) => {
-      console.log(projectId);
-      dialog.close();
-      if (message === "confirm") {
-        // deleteProject(projectId);
-        projectArchive(projectId);
+  // const handleProjectDelete =
+  //   (projectId: string) =>
+  //   async ({ message }, dialog) => {
+  //     console.log(projectId);
+  //     dialog.close();
+  //     if (message === "confirm") {
+  //       // deleteProject(projectId);
+  //       projectArchive(projectId);
 
-        if (activeProjectId === projectId) {
-          // await clearDocument();
-          // await deleteProjectIdProperty();
-          setProjectIdProperty(null);
-        }
-      }
-    };
+  //       if (activeProjectId === projectId) {
+  //         // await clearDocument();
+  //         // await deleteProjectIdProperty();
+  //         setProjectIdProperty(null);
+  //       }
+  //     }
+  //   };
 
   // this project for Archive Project
   const handleProjectArchive = async (projectId: string) => {
@@ -113,13 +113,13 @@ const ExistProject = () => {
       </Stack>
       <Image src={logo} alt="logo" />
       <Paper variant="container">
-        <ProjectList
+        {/* <ProjectList
           activeProjectId={activeProjectId}
           projects={projects}
           onProjectOpen={handleProjectOpen}
           onProjectDelete={handleProjectDelete}
           onProjectArchive={handleProjectArchive}
-        />
+        /> */}
       </Paper>
     </Stack>
   );

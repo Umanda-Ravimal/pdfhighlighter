@@ -13,7 +13,7 @@ const useSignUpSchema = () => {
       confirmPassword: yup
         .string()
         .required(t("form.confirmPassword.required"))
-        .oneOf([yup.ref("password"), null], t("form.confirmPassword.mismatch")),
+        .oneOf([yup.ref("password")], t("form.confirmPassword.mismatch")),
     });
   }, [t]);
 

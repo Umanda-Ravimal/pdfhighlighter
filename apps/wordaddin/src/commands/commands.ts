@@ -33,7 +33,7 @@ function action(event: Office.AddinCommands.Event) {
 // Register the function with Office.
 Office.actions.associate("action", action);
 
-function eventHandler(arg) {
+function eventHandler(arg:any) {
   // In addition to general system errors, there are 2 specific errors
   // and one event that you can handle individually.
   switch (arg.error) {
@@ -54,9 +54,9 @@ function eventHandler(arg) {
 }
 
 export function openDialog(
-  HTMLUrl,
+  HTMLUrl:any,
   options: Office.DialogOptions,
-  messageHandler: (message: object, dialog) => void
+  messageHandler: (message: object, dialog:any) => void
 ) {
   Office.context.ui.displayDialogAsync(HTMLUrl, options, (asyncResult) => {
     if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -141,7 +141,7 @@ export function getDocumentBase64(): Promise<string> {
           const sliceCount = myFile.sliceCount;
           const slicesReceived = 0,
             gotAllSlices = true,
-            docdataSlices = [];
+            docdataSlices = <any>[];
 
           // Get the file slices.
           getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived, (result: string) => {

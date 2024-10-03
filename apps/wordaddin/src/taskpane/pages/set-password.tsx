@@ -1,5 +1,5 @@
-import { Button, Card, StyledBox, FormTextInput, Typography, Container, Stack, Image } from "@kelsen-labs/atoms";
-import { confirmPassword } from "@kelsen-labs/api";
+import { Button, Card, StyledBox, FormTextInput, Typography, Container, Stack, Image } from "@my-workspace/packages-atoms";
+import { confirmPassword } from "@my-workspace/api";
 import { redirectToPage } from "../../utils";
 import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -25,14 +25,14 @@ const SetPasswordPage: React.FC = () => {
     password: yup.string().min(8, t("form.password.min")).required(t("form.password.required")),
   });
 
-  const handleSubmit = useCallback(async (data: FormData) => {
-    await confirmPassword({
-      newPassword: data.password,
-      verificationCode: data.code,
-      username,
-    });
-    redirectToPage("sign-in");
-  }, [username]);
+  // const handleSubmit = useCallback(async (data: FormData) => {
+  //   await confirmPassword({
+  //     newPassword: data.password,
+  //     verificationCode: data.code,
+  //     username,
+  //   });
+  //   redirectToPage("sign-in");
+  // }, [username]);
 
   if (!username) redirectToPage("forgot-password");
 
@@ -44,14 +44,14 @@ const SetPasswordPage: React.FC = () => {
     async (data: FormData) => {
       methods.clearErrors();
       try {
-        await handleSubmit(data);
+        // await handleSubmit(data);
       } catch (e) {
         if (e instanceof Error) {
           methods.setError("root", { message: e.message });
         }
       }
     },
-    [handleSubmit, methods.clearErrors, methods.setError]
+    [methods.clearErrors, methods.setError]
   );
 
   const renderedFields = useMemo(

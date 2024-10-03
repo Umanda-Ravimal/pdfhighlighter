@@ -1,11 +1,11 @@
-import { Stack, Typography, Card, Button, Box, Container } from "@kelsen-labs/atoms";
+import { Stack, Typography, Card, Button, Box, Container } from "@my-workspace/packages-atoms";
 import React, { useEffect, useCallback, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import { useNavigate } from "react-router-dom";
 import { useActiveOrganization, useStoreOrganization } from "../../hook";
-import { AppRoutes } from "@kelsen-labs/common";
+import { AppRoutes } from "@my-workspace/packages-common";
 
 interface Organization {
   id: string;

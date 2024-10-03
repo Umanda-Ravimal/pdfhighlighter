@@ -1,12 +1,12 @@
-import { Paper, Stack } from "@kelsen-labs/atoms";
+import { Paper, Stack } from "@my-workspace/packages-atoms";
 import { useTranslation } from "react-i18next";
-import { ActionBar } from "@kelsen-labs/molecules";
-import { PromptBar, EditorPage, ConversationBar } from "../../components/index";
-import { ReferencePage, UploadSourcePage } from "@kelsen-labs/organisms";
+import { ActionBar } from "@my-workspace/packages-molecules";
+import { PromptBar, ConversationBar } from "../../components/index";
+import { ReferencePage, UploadSourcePage } from "@my-workspace/packages-organisms";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useMetaDataStore, useUploadSourceStore } from "@kelsen-labs/zustand";
+import { useMetaDataStore, useUploadSourceStore } from "@my-workspace/packages-zustand";
 import { useEffect } from "react";
-import { setupDocumentSelectionHandler } from "@kelsen-labs/common";
+import { setupDocumentSelectionHandler } from "@my-workspace/packages-common";
 
 const ProjectHome = () => {
   const { t } = useTranslation();
@@ -35,14 +35,14 @@ const ProjectHome = () => {
         <ActionBar />
         {view === "create" && (
           <>
-            <EditorPage />
+            {/* <EditorPage /> */}
             {uploadSourse && <UploadSourcePage />}
             <ConversationBar />
           </>
         )}
         {view === "createwithsource" && (
           <>
-            <EditorPage />
+            {/* <EditorPage /> */}
             <UploadSourcePage />
             <ConversationBar />
           </>

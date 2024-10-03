@@ -26,8 +26,8 @@ import { FileUploadModal } from "./components/project/file-upload-modal";
 import { ViewSource } from "./pages/view-source";
 import { AddVersion, 
   // ImportPage, 
-  SavePage, VersionHistory } from "@kelsen-labs/organisms";
-import { AppRoutes } from "@kelsen-labs/common";
+  SavePage, VersionHistory } from "@my-workspace/packages-organisms";
+import { AppRoutes } from "@my-workspace/packages-common";
 import { DeleteProjectPrompt } from "./pages/dialogue/delete-project";
 import { ExistingDocPrompt } from "./pages/dialogue/existing-doc";
 

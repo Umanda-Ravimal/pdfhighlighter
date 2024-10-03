@@ -121,7 +121,7 @@ declare module "@mui/material/styles" {
   }
 }
 
-declare module "@kelsen-labs/interfaces" {
+declare module "@my-workspace/packages-interfaces" {
   interface StyledBoxVariantOverrides {
     inputVariant: true;
     cardCoverImage: true;

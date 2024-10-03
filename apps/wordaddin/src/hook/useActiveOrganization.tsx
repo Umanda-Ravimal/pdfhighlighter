@@ -1,4 +1,4 @@
-import { useOrganizationStore } from "@kelsen-labs/zustand";
+import { useOrganizationStore } from "@my-workspace/packages-zustand";
 
 const useActiveOrganization = () => {
   // const { setOrganizations, setActiveOrganization } = useOrganizationStore();

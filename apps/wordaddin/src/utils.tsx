@@ -53,7 +53,7 @@ export const redirectToPage = (page: Page, params?: object) => {
 //   }
 // };
 
-function eventHandler(arg) {
+function eventHandler(arg :any) {
   // In addition to general system errors, there are 2 specific errors
   // and one event that you can handle individually.
   switch (arg.error) {
@@ -74,7 +74,7 @@ function eventHandler(arg) {
 }
 
 export function openDialog(
-  HTMLUrl,
+  HTMLUrl: string,
   options: Office.DialogOptions,
   messageHandler?: (arg: object, dialog: { close: () => void }) => void
 ) {

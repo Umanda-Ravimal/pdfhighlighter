@@ -1,4 +1,4 @@
-import { Button, Stack, Typography, Paper } from "@kelsen-labs/atoms";
+import { Button, Stack, Typography, Paper } from "@my-workspace/packages-atoms";
 import { useTranslation } from "react-i18next";
 
 export const ExistingDocPrompt = () => {

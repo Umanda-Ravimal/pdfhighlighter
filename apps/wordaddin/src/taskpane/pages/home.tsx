@@ -1,12 +1,12 @@
-import { Button, Link, Typography, Image, Stack } from "@kelsen-labs/atoms";
+import { Button, Link, Typography, Image, Stack } from "@my-workspace/packages-atoms";
 import logo from "../../../assets/logo.png";
 import { FluentProvider, webLightTheme } from "@fluentui/react-components";
 import { useTranslation } from "react-i18next";
 
 import { OrganizationHome } from "./organization-home";
 import { ProjectHome } from "./project/project-home";
-import { useSessionStore } from "@kelsen-labs/zustand";
-import { useDialog } from "@kelsen-labs/common";
+import { useSessionStore } from "@my-workspace/packages-zustand";
+import { useDialog } from "@my-workspace/packages-common";
 import { ProjectMainPage } from "./project/project-main";
 
 const Home = () => {

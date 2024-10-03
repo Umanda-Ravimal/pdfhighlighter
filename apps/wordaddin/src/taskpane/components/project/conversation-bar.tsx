@@ -2,10 +2,10 @@ import React, { useState, useCallback, useMemo } from "react";
 import { Avatar, Rating, Snackbar, Alert } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import OpenInFullIcon from "@mui/icons-material/OpenInFullOutlined";
-import { useMetaDataStore } from "@kelsen-labs/zustand";
-import { SearchBar, LoadingSkeleton } from "@kelsen-labs/molecules";
-import { Stack, Typography, IconButton, Button, Paper } from "@kelsen-labs/atoms";
-import { paragraphAdded } from "@kelsen-labs/common";
+import { useMetaDataStore } from "@my-workspace/packages-zustand";
+import { SearchBar, LoadingSkeleton } from "@my-workspace/packages-molecules";
+import { Stack, Typography, IconButton, Button, Paper } from "@my-workspace/packages-atoms";
+import { paragraphAdded } from "@my-workspace/packages-common";
 
 const ConversationBar = () => {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
-import { getCurrentOrganizations, getPendingOrganizations } from "@kelsen-labs/api";
-import { useOrganizationStore } from "@kelsen-labs/zustand";
+import { getCurrentOrganizations, getPendingOrganizations } from "@my-workspace/packages-api";
+import { useOrganizationStore } from "@my-workspace/packages-zustand";
 
 const useStoreOrganization = () => {
   const {

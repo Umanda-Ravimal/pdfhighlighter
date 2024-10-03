@@ -34,7 +34,7 @@ const useMetadataService = () => {
     return response;
   };
 
-  const createBlock = async (selectedblockId: string) => {
+  const createBlock = async (selectedblockId: any) => {
     const projectId = '81b17a92-4a96-462c-bb3b-c44d625d374b';
     const selectedBlock = selectedblockId;
     const selectedHeading = 'abstract';

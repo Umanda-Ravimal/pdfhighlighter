@@ -8,8 +8,8 @@ import {
   Container,
   Stack,
   Image,
-} from "@kelsen-labs/atoms";
-import { initResetPassword } from "@kelsen-labs/api";
+} from "@my-workspace/packages-atoms";
+import { initResetPassword } from "@my-workspace/packages-api";
 import { redirectToPage } from "../../utils";
 import logo from "../../../assets/logo.png";
 import { FormProvider, useForm } from "react-hook-form";

@@ -9,7 +9,7 @@ import {
   Link,
   FormCheckboxInput,
   Image,
-} from "@kelsen-labs/atoms";
+} from "@my-workspace/packages-atoms";
 
 import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -17,7 +17,7 @@ import * as yup from "yup";
 import { useTranslation } from "react-i18next";
 import React, { useCallback, useMemo } from "react";
 import { useEnvironment } from "../../hook/useEnvironment";
-import { signIn } from "@kelsen-labs/api";
+import { signIn } from "@my-workspace/packages-api";
 import { redirectToPage } from "../../utils";
 import logo from "../../../assets/logo.png";
 import data from "../../utils/signIn.json";
@@ -44,7 +44,7 @@ const SignInPage = () => {
       try {
         const res = await signIn(data);
         Office.context.ui.messageParent(JSON.stringify(res));
-      } catch (e) {
+      } catch (e:any) {
         if (e.message === "User is not confirmed.") {
           redirectToPage("verify-account", {
             username: data.username,

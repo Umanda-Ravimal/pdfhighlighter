@@ -1,4 +1,4 @@
-// export * from './lib/aws';
+export * from './lib/aws';
 export * from './lib/organizations';
 export * from './lib/project';
 export * from './lib/sources';

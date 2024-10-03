@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import { Button, Typography, Box, Stack } from "@kelsen-labs/atoms";
+import { Button, Typography, Box, Stack } from "@my-workspace/packages-atoms";
 import { useTranslation } from "react-i18next";
 
 const FileUploadModal: React.FC = () => {

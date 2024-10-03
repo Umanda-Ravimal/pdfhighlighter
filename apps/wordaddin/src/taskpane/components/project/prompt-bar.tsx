@@ -1,4 +1,4 @@
-import { Stack, Paper, InputBase, FormCheckboxInput, Button, Typography } from "@kelsen-labs/atoms";
+import { Stack, Paper, InputBase, FormCheckboxInput, Button, Typography } from "@my-workspace/packages-atoms";
 import React, { useCallback, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import {
@@ -13,8 +13,8 @@ import Slider from "@mui/material/Slider";
 import { useTranslation } from "react-i18next";
 import { v4 as uuidv4 } from "uuid";
 
-import { useMetadataService } from "@kelsen-labs/api";
-import { useMetaDataStore } from "@kelsen-labs/zustand";
+import { useMetadataService } from "@my-workspace/packages-api";
+import { useMetaDataStore } from "@my-workspace/packages-zustand";
 
 const PromptBar = () => {
   const [value, setValue] = React.useState<number[]>([300, 2800]);
@@ -47,11 +47,11 @@ const PromptBar = () => {
     console.log("Send button clicked with input value:", inputValue);
     const uniqueKey = uuidv4();
     let response = "";
-    addResponceData(inputValue, response, uniqueKey , blockId);
+    // addResponceData(inputValue, response, uniqueKey , blockId);
     setInputValue("");
-    const responseData = await generateMetaData(inputValue , selectedblockId);
-    response = responseData;
-    updateResponseData(uniqueKey, response);
+    // const responseData = await generateMetaData(inputValue , selectedblockId);
+    // response = responseData;
+    // updateResponseData(uniqueKey, response);
   }, [inputValue]);
 
   const marks = [{ value: 0 }, { value: 1000 }, { value: 2000 }, { value: 3000 }, { value: 4000 }, { value: 5000 }];

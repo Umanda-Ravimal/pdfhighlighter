@@ -1,5 +1,5 @@
 import { redirectToPage } from "../../utils";
-import { signUp } from "@kelsen-labs/api";
+import { signUp } from "@my-workspace/api";
 import logo from "../../../assets/logo.png";
 import {
   Button,
@@ -11,7 +11,7 @@ import {
   Stack,
   Link,
   Image,
-} from "@kelsen-labs/atoms";
+} from "@my-workspace/packages-atoms";
 import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useTranslation } from "react-i18next";

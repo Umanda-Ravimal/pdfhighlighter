@@ -1,9 +1,9 @@
-import { Stack, Button, Typography, Paper } from "@kelsen-labs/atoms";
-import { useMetaDataStore } from "@kelsen-labs/zustand";
+import { Stack, Button, Typography, Paper } from "@my-workspace/packages-atoms";
+import { useMetaDataStore } from "@my-workspace/packages-zustand";
 import { Sync } from "@mui/icons-material";
 import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { useDialog } from "@kelsen-labs/common";
+import { useDialog } from "@my-workspace/packages-common";
 
 const UnsyncPage = () => {
   const { t } = useTranslation();
