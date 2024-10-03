@@ -1,0 +1,16 @@
+[
+    {
+      "id": "username",
+      "label": "User Name",
+      "translationKey": "form.username.label",
+      "placeholder": "Enter Username",
+      "type": "text"
+    },
+    {
+      "id": "password",
+      "label": "Password",
+      "translationKey": "form.password.label",
+      "placeholder": "Enter password",
+      "type": "password"
+    }
+  ]

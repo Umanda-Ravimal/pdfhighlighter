@@ -1,0 +1,38 @@
+[
+  {
+    "id": "username",
+    "label": "User Name",
+    "translationKey": "form.username.label",
+    
+    "placeholder": "Enter Username",
+    "placeholderTranslationKey": "form.username.placeholder",
+    "type": "text"
+  },
+  {
+    "id": "email",
+    "label": "Email",
+    "translationKey": "form.email.label",
+    "placeholder": "Enter Email",
+    "placeholderTranslationKey": "form.email.placeholder",
+    "type": "text"
+  },
+  {
+    "id": "password",
+    "label": "Password",
+    "translationKey": "form.password.label",
+    "placeholder": "Enter password",
+    "placeholderTranslationKey": "form.password.placeholder",
+    "type": "password"
+  },
+  {
+    "id": "confirmPassword",
+    "label": "Confirm Password",
+    "translationKey": "form.confirmPassword.label",
+    "placeholder": "Enter confirm Password",
+    "placeholderTranslationKey": "form.confirmPassword.placeholder",
+    "type": "password",
+    "props": {
+      "linkedWith": "password"
+    }
+  }
+]

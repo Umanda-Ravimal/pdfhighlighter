@@ -1,0 +1,10 @@
+[
+  {
+    "id": "otp",
+    "label": "OTP",
+    "translationKey": "form.otp.label",
+    "placeholder": "Enter your otp",
+    "placeholderTranslationKey": "form.otp.placeholder",
+    "type": "text"
+  }
+]

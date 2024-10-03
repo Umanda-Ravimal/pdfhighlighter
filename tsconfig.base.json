@@ -14,7 +14,20 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "paths": {
+      "@my-workspace/api": ["packages/api/src/index.ts"],
+      "@my-workspace/packages-api": ["packages/api/src/index.ts"],
+      "@my-workspace/packages-atoms": ["packages/atoms/src/index.ts"],
+      "@my-workspace/packages-common": ["packages/common/src/index.ts"],
+      "@my-workspace/packages-interfaces": ["packages/interfaces/src/index.ts"],
+      "@my-workspace/packages-molecules": ["packages/molecules/src/index.ts"],
+      "@my-workspace/packages-organisms": ["packages/organisms/src/index.ts"],
+      "@my-workspace/packages-zustand": ["packages/zustand/src/index.ts"],
+      "@my-workspace/packages-themes": ["packages/themes/src/index.ts"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

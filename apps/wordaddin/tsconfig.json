@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    "allowUnusedLabels": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "removeComments": false,
+    "sourceMap": true,
+    // "skipLibCheck": true,
+    "target": "es5",
+    "lib": ["es7", "dom"],
+    "pretty": true,
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "../../dist/out-tsc",
+    "types": [
+      "node",
+      "@nx/react/typings/cssmodule.d.ts",
+      "@nx/react/typings/image.d.ts",
+      "@types/office-js",
+      "@types/office-runtime"
+    ],
+    // "baseUrl": "src",
+    // "paths": {
+    //   "@src/hook": ["src/hook/index.ts"],
+    //   "@src/components": ["src/components/index.ts"],
+    //   "@src/*": ["./*"]
+    // }
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "ts-node": {
+    "files": true
+  },
+  "files": [],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "src/**/*.spec.tsx",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.js",
+    "src/**/*.test.js",
+    "src/**/*.spec.jsx",
+    "src/**/*.test.jsx"
+  ],
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "../../node_modules/@types/office-js",
+    "../typings.d.ts"
+  ],
+  "extends": "../../tsconfig.base.json"
+}

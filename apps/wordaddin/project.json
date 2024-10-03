@@ -1,0 +1,48 @@
+{
+  "name": "wordaddin",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/wordaddin/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "command": "yarn workspace wordaddin run build"
+    },
+    "build:dev": {
+      "command": "yarn workspace wordaddin run build:dev"
+    },
+    "dev-server": {
+      "command": "yarn workspace wordaddin run dev-server"
+    },
+    "lint": {
+      "command": "yarn workspace wordaddin run lint"
+    },
+    "lint:fix": {
+      "command": "yarn workspace wordaddin run lint:fix"
+    },
+    "validate": {
+      "command": "yarn workspace wordaddin run validate"
+    },
+    "signin": {
+      "command": "yarn workspace wordaddin run signin"
+    },
+    "signout": {
+      "command": "yarn workspace wordaddin run signout"
+    },
+    "start": {
+      "command": "yarn workspace wordaddin run start"
+    },
+    "start:desktop": {
+      "command": "yarn workspace wordaddin run start:desktop"
+    },
+    "start:web": {
+      "command": "yarn workspace wordaddin run start:web"
+    },
+    "stop": {
+      "command": "yarn workspace wordaddin run stop"
+    },
+    "watch": {
+      "command": "yarn workspace wordaddin run watch"
+    }
+  },
+  "tags": []
+}
