@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState } from 'react';
 import { openDialog } from '@my-workspace/packages-common';
 import { useAuthStore, useMetaDataStore } from '@my-workspace/packages-zustand';
 import { useSessionStore } from '@my-workspace/packages-zustand';
-import { APP_BASE_URL } from '@my-workspace/api';
+import { APP_BASE_URL } from '../../../api/src/config';
 
 interface Token {
   jwtToken: string;

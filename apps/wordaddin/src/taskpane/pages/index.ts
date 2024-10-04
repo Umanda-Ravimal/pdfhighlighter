@@ -11,3 +11,4 @@ export * from "./sign-up";
 export * from "./verify-account";
 export * from "./sync-page";
 export * from "./unsync-page";
+export * from "./view-source";

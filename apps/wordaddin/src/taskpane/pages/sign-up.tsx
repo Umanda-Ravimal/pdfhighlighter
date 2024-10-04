@@ -1,5 +1,5 @@
 import { redirectToPage } from "../../utils";
-import { signUp } from "@my-workspace/api";
+// import { signUp } from "@my-workspace/api";
 import logo from "../../../assets/logo.png";
 import {
   Button,
@@ -33,9 +33,9 @@ const SignUpPage = () => {
   const { baseUrl } = useEnvironment();
 
   const handleSubmit = useCallback(async (data: FormData) => {
-    const result = await signUp(data);
-    const username = result.user.getUsername();
-    redirectToPage("verify-account", { username });
+    // const result = await signUp(data);
+    // const username = result.user.getUsername();
+    // redirectToPage("verify-account", { username });
   }, []);
 
   const { t } = useTranslation();
@@ -86,7 +86,7 @@ const SignUpPage = () => {
                 {methods.formState.errors.root ? (
                   <Typography variant="caption">{methods.formState.errors.root.message}</Typography>
                 ) : null}
-                <form onSubmit={methods.handleSubmit(onSubmitWrapper)}>
+                
                   <Stack direction={"column"} spacing={2}>
                     {renderedFields}
                     <Button
@@ -99,7 +99,7 @@ const SignUpPage = () => {
                       <Typography variant="button">{t("sign_up_button")}</Typography>
                     </Button>
                   </Stack>
-                </form>
+                
                 <Stack direction={"column"} spacing={1} justifyContent={"center"} alignItems={"center"}>
                   <Typography variant="subtitle2">
                     {t("already_have_an_account")}{" "}

@@ -26,8 +26,8 @@ import { FileUploadModal } from "./components/project/file-upload-modal";
 import { ViewSource } from "./pages/view-source";
 import { AddVersion, 
   // ImportPage, 
-  SavePage, VersionHistory } from "@my-workspace/packages-organisms";
-import { AppRoutes } from "@my-workspace/packages-common";
+  SavePage, VersionHistory } from "../../../../packages/organisms/src/index";
+import { AppRoutes } from "../../../../packages/common/src/index";
 import { DeleteProjectPrompt } from "./pages/dialogue/delete-project";
 import { ExistingDocPrompt } from "./pages/dialogue/existing-doc";
 
